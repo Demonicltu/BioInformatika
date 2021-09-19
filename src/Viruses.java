@@ -18,14 +18,16 @@ import java.util.stream.Collectors;
 
 public class Viruses {
 
+    private static final int MAX_NUMBER_VALUE = 8;
+
     private static int number = 0;
-    private static double[] ATG = {0, 0, 0, 0, 0, 0, 0, 0};
-    private static double[] TAA = {0, 0, 0, 0, 0, 0, 0, 0};
-    private static double[] TAG = {0, 0, 0, 0, 0, 0, 0, 0};
-    private static double[] TGA = {0, 0, 0, 0, 0, 0, 0, 0};
-    private static Map<String, Integer>[] diCodonList = new HashMap[8];
-    private static final int[] diCodonListSum = {0, 0, 0, 0, 0, 0, 0, 0};
-    private static Map<String, Integer>[] sortedDiCodons = new HashMap[8];
+    private static double[] ATG = new double[MAX_NUMBER_VALUE];
+    private static double[] TAA = new double[MAX_NUMBER_VALUE];
+    private static double[] TAG = new double[MAX_NUMBER_VALUE];
+    private static double[] TGA = new double[MAX_NUMBER_VALUE];
+    private static Map<String, Integer>[] diCodonList = new HashMap[MAX_NUMBER_VALUE];
+    private static final int[] diCodonListSum = new int[MAX_NUMBER_VALUE];
+    private static Map<String, Integer>[] sortedDiCodons = new HashMap[MAX_NUMBER_VALUE];
 
     public static void main(String[] args) throws Exception {
         execute("bacterial1.fasta", number);
