@@ -7,8 +7,11 @@ Laboratorinio darbo analizė bei funkcijų įgyvendintų kode aprašymas laisva 
 Visi dokumentai ir kodas susijęs su šia užduotimi yra "1 Laboratorinis darbas" aplanke. 
 
 1 Laboratorinis darbas/inputs/ aplanke laikomi fasta dokumentai ir užduoties aprašymas.
+
 1 Laboratorinis darbas/outputs/ aplanke laikomi kodonų ir dikodonų medžiai, bei programos išvesties tekstas.
+
 1 Laboratorinis darbas/libs/ aplanke laikomi dependencies jar'ai.
+
 1 Laboratorinis darbas/src/ aplanke laikomas programos veikimo kodas.
 
 Metodas "List<DNASequence> findCodonSequences(List<DNASequence> seq)" yra naudojamas atrasti visus reikalingus sekų
