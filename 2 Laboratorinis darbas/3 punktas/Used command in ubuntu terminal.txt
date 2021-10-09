@@ -1,0 +1,20 @@
+perl script/sortgenome.pl --genomes-file my_data/NC_045512.fasta --sortedgenomes-file my_data/NC_045512.sort.fasta
+perl script/sortgenome.pl --genomes-file my_data/MN514967.1.fasta --sortedgenomes-file my_data/MN514967.1.sort.fasta
+perl script/sortgenome.pl --genomes-file my_data/combined_sequence.fasta --sortedgenomes-file my_data/combined_sequence.sort.fasta
+perl script/sortgenome.pl --genomes-file my_data/complete_sequence.fasta --sortedgenomes-file my_data/complete_sequence.sort.fasta
+
+./gclust -minlen 20 -both -nuc -threads 8 -ext 1 -sparse 2 -memiden 97 my_data/NC_045512.sort.fasta > my_data/NC_045512.sort.fasta.clustering.out
+./gclust -minlen 20 -both -nuc -threads 8 -ext 1 -sparse 2 -memiden 97 my_data/MN514967.1.sort.fasta > my_data/MN514967.1.sort.fasta.clustering.out
+./gclust -minlen 20 -both -nuc -threads 8 -ext 1 -sparse 2 -memiden 97 my_data/combined_sequence.sort.fasta > my_data/combined_sequence.sort.fasta.clustering.out
+./gclust -minlen 20 -both -nuc -threads 8 -ext 1 -sparse 2 -memiden 97 my_data/complete_sequence.sort.fasta > my_data/complete_sequence.sort.fasta.clustering.out
+
+seqkit grep -r -f my_data/NC_045512.fasta my_data/NC_045512.sort.fasta.clustering.out -o my_data/NC_045512.seqkit.extract.out
+seqkit grep -r -f my_data/MN514967.1.fasta my_data/MN514967.1.sort.fasta.clustering.out -o my_data/MN514967.1.seqkit.extract.out
+seqkit grep -r -f my_data/combined_sequence.fasta my_data/combined_sequence.sort.fasta.clustering.out -o my_data/combined_sequence.seqkit.extract.out
+seqkit grep -r -f my_data/complete_sequence.fasta my_data/complete_sequence.sort.fasta.clustering.out -o my_data/complete_sequence.seqkit.extract.out
+
+#Papildomai buvo pabandyta sugeneruoti genomus
+make -f script/makefile_createreps gf=my_data/NC_045512.fasta clu=my_data/NC_045512.sort.fasta.clustering.out pgf=my_data/NC_045512.repgenomes.out CRG
+make -f script/makefile_createreps gf=my_data/MN514967.1.fasta clu=my_data/MN514967.1.sort.fasta.clustering.out pgf=my_data/MN514967.1.repgenomes.out CRG
+make -f script/makefile_createreps gf=my_data/combined_sequence.fasta clu=my_data/combined_sequence.sort.fasta.clustering.out pgf=my_data/combined_sequence.repgenomes.out CRG
+make -f script/makefile_createreps gf=my_data/complete_sequence.fasta clu=my_data/complete_sequence.sort.fasta.clustering.out pgf=my_data/complete_sequence.repgenomes.out CRG
