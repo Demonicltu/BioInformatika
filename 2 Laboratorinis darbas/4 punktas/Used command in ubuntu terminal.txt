@@ -1,0 +1,17 @@
+#https://bioinf.shenwei.me/seqkit/usage/#translate
+seqkit translate my_data/D3W8N4.fasta > my_data/D3W8N4.translated.fasta
+
+#https://bioinf.shenwei.me/seqkit/usage/#seq
+seqkit seq -m 800 my_data/D3W8N4.translated.fasta > my_data/D3W8N4.translated.filtered.fasta
+
+#https://mafft.cbrc.jp/alignment/software/manual/manual.html
+mafft --maxiterate 1000 --localpair my_data/D3W8N4.translated.filtered.fasta > my_data/D3W8N4.aligned.fasta 
+
+#https://www.biostars.org/p/170941/
+#https://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html
+perl -i.bak -pe 's/\h+$//' my_data/D3W8N4.aligned.fasta
+perl -i.bak -pe 's/://' my_data/D3W8N4.aligned.fasta
+
+#http://www.microbesonline.org/fasttree/
+fasttree -gamma my_data/D3W8N4.aligned.fasta > my_data/D3W8N4.tree.fasta
+
