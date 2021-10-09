@@ -2,6 +2,77 @@
 
 Laboratorinio darbo analizė bei funkcijų įgyvendintų kode aprašymas laisva forma.
 
+# Antras laboratorinis darbas
+
+Naudotos komandos užduoties 3 punkte:
+perl script/sortgenome.pl --genomes-file my_data/NC_045512.fasta --sortedgenomes-file my_data/NC_045512.sort.fasta
+perl script/sortgenome.pl --genomes-file my_data/MN514967.1.fasta --sortedgenomes-file my_data/MN514967.1.sort.fasta
+perl script/sortgenome.pl --genomes-file my_data/combined_sequence.fasta --sortedgenomes-file my_data/combined_sequence.sort.fasta
+perl script/sortgenome.pl --genomes-file my_data/complete_sequence.fasta --sortedgenomes-file my_data/complete_sequence.sort.fasta
+
+./gclust -minlen 20 -both -nuc -threads 8 -ext 1 -sparse 2 -memiden 97 my_data/NC_045512.sort.fasta > my_data/NC_045512.sort.fasta.clustering.out
+./gclust -minlen 20 -both -nuc -threads 8 -ext 1 -sparse 2 -memiden 97 my_data/MN514967.1.sort.fasta > my_data/MN514967.1.sort.fasta.clustering.out
+./gclust -minlen 20 -both -nuc -threads 8 -ext 1 -sparse 2 -memiden 97 my_data/combined_sequence.sort.fasta > my_data/combined_sequence.sort.fasta.clustering.out
+./gclust -minlen 20 -both -nuc -threads 8 -ext 1 -sparse 2 -memiden 97 my_data/complete_sequence.sort.fasta > my_data/complete_sequence.sort.fasta.clustering.out
+
+seqkit grep -r -f my_data/NC_045512.fasta my_data/NC_045512.sort.fasta.clustering.out -o my_data/NC_045512.seqkit.extract.out
+seqkit grep -r -f my_data/MN514967.1.fasta my_data/MN514967.1.sort.fasta.clustering.out -o my_data/MN514967.1.seqkit.extract.out
+seqkit grep -r -f my_data/combined_sequence.fasta my_data/combined_sequence.sort.fasta.clustering.out -o my_data/combined_sequence.seqkit.extract.out
+seqkit grep -r -f my_data/complete_sequence.fasta my_data/complete_sequence.sort.fasta.clustering.out -o my_data/complete_sequence.seqkit.extract.out
+
+#Papildomai buvo pabandyta sugeneruoti genomus
+make -f script/makefile_createreps gf=my_data/NC_045512.fasta clu=my_data/NC_045512.sort.fasta.clustering.out pgf=my_data/NC_045512.repgenomes.out CRG
+make -f script/makefile_createreps gf=my_data/MN514967.1.fasta clu=my_data/MN514967.1.sort.fasta.clustering.out pgf=my_data/MN514967.1.repgenomes.out CRG
+make -f script/makefile_createreps gf=my_data/combined_sequence.fasta clu=my_data/combined_sequence.sort.fasta.clustering.out pgf=my_data/combined_sequence.repgenomes.out CRG
+make -f script/makefile_createreps gf=my_data/complete_sequence.fasta clu=my_data/complete_sequence.sort.fasta.clustering.out pgf=my_data/complete_sequence.repgenomes.out CRG
+
+Naudotos komandos užduoties 4 punkte:
+#https://bioinf.shenwei.me/seqkit/usage/#translate
+seqkit translate my_data/D3W8N4.fasta > my_data/D3W8N4.translated.fasta
+
+#https://bioinf.shenwei.me/seqkit/usage/#seq
+seqkit seq -m 800 my_data/D3W8N4.translated.fasta > my_data/D3W8N4.translated.filtered.fasta
+
+#https://mafft.cbrc.jp/alignment/software/manual/manual.html
+mafft --maxiterate 1000 --localpair my_data/D3W8N4.translated.filtered.fasta > my_data/D3W8N4.aligned.fasta 
+
+#https://www.biostars.org/p/170941/
+#https://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html
+perl -i.bak -pe 's/\h+$//' my_data/D3W8N4.aligned.fasta
+perl -i.bak -pe 's/://' my_data/D3W8N4.aligned.fasta
+
+#http://www.microbesonline.org/fasttree/
+fasttree -gamma my_data/D3W8N4.aligned.fasta > my_data/D3W8N4.tree.fasta
+
+--------------------------------------------------------------------------------------------------------------------
+
+Interpretation.....how did the Covid-19 evolve, what path through hosts was taken? Would it be
+different interpretation if out-group is not used? What about Urbani SARS origin? Is the Palm Civet
+origin evident?
+
+--------------------------------------------------------------------------------------------------------------------
+
+1) Interpretation.....how did the Covid-19 evolve, what path through hosts was taken?
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+2) Would it be different interpretation if out-group is not used? What about Urbani SARS origin?
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+3) Is the Palm Civet origin evident?
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
 # Pirmas laboratorinis darbas
 
 Visi dokumentai ir kodas susijęs su šia užduotimi yra "1 Laboratorinis darbas" aplanke. 
