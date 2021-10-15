@@ -1,4 +1,5 @@
-http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html    (set_outgroup)
+#http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html    (set_outgroup)
 
-
+Google colab link:
+https://colab.research.google.com/drive/16TCoEgAs2bJuLbgUVQAfLmfggV_0JF8o#scrollTo=pCWclyFTXjtE
 
