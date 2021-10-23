@@ -28,13 +28,13 @@ make -f script/makefile_createreps gf=my_data/complete_sequence.fasta clu=my_dat
 
 Naudotos komandos užduoties 4 punkte:
 #https://bioinf.shenwei.me/seqkit/usage/#translate
-seqkit translate my_data/D3W8N4.fasta > my_data/D3W8N4.translated.fasta
+seqkit translate --trim my_data/D3W8N4.against.viral.genomes.fasta > my_data/D3W8N4.against.viral.genomes.translated.fasta
 
 #https://bioinf.shenwei.me/seqkit/usage/#seq
-seqkit seq -m 800 my_data/D3W8N4.translated.fasta > my_data/D3W8N4.translated.filtered.fasta
+seqkit seq -m 800 my_data/D3W8N4.against.viral.genomes.translated.fasta > my_data/D3W8N4.against.viral.genomes.translated.filtered.fasta
 
 #https://mafft.cbrc.jp/alignment/software/manual/manual.html
-mafft --maxiterate 1000 --localpair my_data/D3W8N4.translated.filtered.fasta > my_data/D3W8N4.aligned.fasta 
+mafft --maxiterate 1000 --localpair my_data/D3W8N4.against.viral.genomes.translated.filtered.fasta > my_data/D3W8N4.aligned.fasta 
 
 #https://www.biostars.org/p/170941/
 #https://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html
@@ -42,8 +42,17 @@ perl -i.bak -pe 's/\h+$//' my_data/D3W8N4.aligned.fasta
 perl -i.bak -pe 's/://' my_data/D3W8N4.aligned.fasta
 
 #http://www.microbesonline.org/fasttree/
-fasttree -gamma my_data/D3W8N4.aligned.fasta > my_data/D3W8N4.tree.fasta
+fasttree -gamma my_data/D3W8N4.aligned.fasta > my_data/tree.txt
 
+#http://etetoolkit.org/treeview/
+Paste my_data/tree.txt
+
+Naudotos komandos užduoties 5 punkte:
+
+#http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html    (set_outgroup)
+
+Google colab link:
+https://colab.research.google.com/drive/16TCoEgAs2bJuLbgUVQAfLmfggV_0JF8o#scrollTo=pCWclyFTXjtE
 --------------------------------------------------------------------------------------------------------------------
 
 Interpretation.....how did the Covid-19 evolve, what path through hosts was taken? Would it be
@@ -54,24 +63,28 @@ origin evident?
 
 1) Interpretation.....how did the Covid-19 evolve, what path through hosts was taken?
 
-
-
-
---------------------------------------------------------------------------------------------------------------------
-
-2) Would it be different interpretation if out-group is not used? What about Urbani SARS origin?
-
-
-
+Kaip matome iš paskutinio gauto medžio, Covid-19 evoliuconavo ne iš kupranugarių covid viruso. O perėjo per šiuos virusus KF293666.1 / KF293664.1 / MW039392.1 / MT085168.1 / MT085175.1 / MT085172.1 / MZ064540.1 / MZ064531.1 / LC469308.1 / NC_034440.1. Bet iš kitų šaltinių radau, kad kupranugarių virusas yra giminingas covid-19. Tikėtina, kad skaičiavimai buvo atlikti netaisyklingai, įsivėlė klaida.
 
 --------------------------------------------------------------------------------------------------------------------
 
-3) Is the Palm Civet origin evident?
+2) Would it be different interpretation if out-group is not used?
 
-
-
+Taip, kitu atveju matysis (būtų traktuojami) skirtingai giministės ryšiai in/out-group'sų.
 
 --------------------------------------------------------------------------------------------------------------------
+3) What about Urbani SARS origin?
+
+Iš dabartinio medžio nėra matoma Urbani SARS kilmė. Tačiau iš kitų šaltinių radau, kad Urbani SARS kilo nuo šikšnosparnių ir buvo perneštas žmogui per laukines kates.
+
+--------------------------------------------------------------------------------------------------------------------
+
+4) Is the Palm Civet origin evident?
+
+Iš dabartinio medžio nėra aišku. Negalima atsakyti.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Atsakymai gali būti neteisingi arba dalinai teisingi dėl atsiradusių klaidų skaičiavimuose ar genomų duombazei grąžinus klaidingus duomenis. Visi tarpiniai sprendimai, duomenys bei rezultatai yra sukelti prie atitinkamų punktų.
 
 # Pirmas laboratorinis darbas
 
