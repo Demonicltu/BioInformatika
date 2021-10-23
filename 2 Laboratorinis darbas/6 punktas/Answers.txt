@@ -6,21 +6,25 @@ origin evident?
 
 1) Interpretation.....how did the Covid-19 evolve, what path through hosts was taken?
 
-
-
-
---------------------------------------------------------------------------------------------------------------------
-
-2) Would it be different interpretation if out-group is not used? What about Urbani SARS origin?
-
-
-
+Kaip matome iš paskutinio gauto medžio, Covid-19 evoliuconavo ne iš kupranugarių covid viruso. O perėjo per šiuos virusus KF293666.1 / KF293664.1 / MW039392.1 / MT085168.1 / MT085175.1 / MT085172.1 / MZ064540.1 / MZ064531.1 / LC469308.1 / NC_034440.1. Bet iš kitų šaltinių radau, kad kupranugarių virusas yra giminingas covid-19. Tikėtina, kad skaičiavimai buvo atlikti netaisyklingai, įsivėlė klaida.
 
 --------------------------------------------------------------------------------------------------------------------
 
-3) Is the Palm Civet origin evident?
+2) Would it be different interpretation if out-group is not used?
 
-
-
+Taip, kitu atveju matysis (būtų traktuojami) skirtingai giministės ryšiai in/out-group'sų.
 
 --------------------------------------------------------------------------------------------------------------------
+3) What about Urbani SARS origin?
+
+Iš dabartinio medžio nėra matoma Urbani SARS kilmė. Tačiau iš kitų šaltinių radau, kad Urbani SARS kilo nuo šikšnosparnių ir buvo perneštas žmogui per laukines kates.
+
+--------------------------------------------------------------------------------------------------------------------
+
+4) Is the Palm Civet origin evident?
+
+Iš dabartinio medžio nėra aišku. Negalima atsakyti.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Atsakymai gali būti neteisingi arba dalinai teisingi dėl atsiradusių klaidų skaičiavimuose ar genomų duombazei grąžinus klaidingus duomenis. Visi tarpiniai sprendimai, duomenys bei rezultatai yra sukelti prie atitinkamų punktų.
