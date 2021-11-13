@@ -2,6 +2,69 @@
 
 Laboratorinio darbo analizė bei funkcijų įgyvendintų kode aprašymas laisva forma.
 
+# Trečias laboratorinis darbas
+
+1) Apibūdinkite fastq formatą. (https://en.wikipedia.org/wiki/FASTQ_format). Kokia papildoma informacija pateikiam lyginant su FASTA formatu?
+
+fasta ir fastQ formatų panašumai:
+  - Abu formatai kaupia sekos duomenis bei sekos metaduomenis (angl. data and metadata).
+  - Abu formatai yra pagrįsti tekstu (angl. text-based).
+
+fasta ir fastQ formatų skirtumai:
+ - fastQ formatas buvo sugalvotas išspręsti konkrečią sekos metu kylančią problemą: atsižvelgiant į tai, kaip veikia skirtingos sekvenavimo technologijos, tikimybė, kad teisingai identifikuotas bus nukleotidas labai skiriasi. 
+ - fasta formatas neturi standartizuoto būdo tai užkuduoti. Užtat fastQ yra papildomai atsirandanti nukleotido kokybės balų seka. (angl. sequence of quality scores)
+ - Paprasčiau šnekant, fastQ formatas papildomai padeda nustatyti sekos kokybę.
+ - fastQ formato papildoma informacija: 
+  -- Eilutė, prasidedanti @, kurioje yra sekos ID.
+  -- Viena ar daugiau eilučių, kuriose yra seka.
+  -- Nauja eilutė, prasidedanti simboliu +, tuščia arba kartojanti sekos ID.
+  -- Viena ar daugiau eilučių, kuriose yra kokybės balai.
+
+--------------------------------------------------------------------------------------------------------------------
+
+2) Kurią mėnesio dieną Jūs gimėte? Prie dienos pridėkite 33. Koks ASCII simbolis atitinka šį skaičių?
+
+Gimiau 30 dieną. Prie 30 pridėjus 33 gaunu 63, ASCII simbolio atitiktis (tarp kabučių ") yra "?"
+
+--------------------------------------------------------------------------------------------------------------------
+
+3) Kodėl pirmi 32 ASCII kodai negali būti naudojami sekos kokybei koduoti?
+
+Jei būtų naudojami pirmi 32 ASCII simboliai, tai sekos galėtų įgauti neigiamą kokybės balą.
+
+--------------------------------------------------------------------------------------------------------------------
+
+4. Parašykite skriptą, kuris:
+  a) nustatytu koks kokybės kodavimas yra naudojamas pateiktame faile. Galimos koduotės:
+  i. Sanger Phred+33
+  ii. Solexa Solexa+64
+  iii. Illumina 1.3+ Phred+64
+  iv. Illumina 1.5+ Phred+64
+  v. Illumina 1.8+ Phred+33
+  Parašykite, kokią koduotę nustatėte ir kuo remiantis?
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+4.b) Analizuotų C/G nukleotidų pasiskirstymą read’uose. Pateikite grafiką, kurio y ašyje būtų read’ų skaičius, x ašyje - C/G nukletidų dalis read’o sekoje (100 proc. Reikštų, kad visi simboliai read’o sekoje yra G ir C) Parašykite, koks „stambių“ pikų skaičius yra gautame grafike? (tikrai mažiau nei 6)
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+4.c) Paimtų po 5 kiekvieno piko viršūnės sekų ir atliktų blast’o paieškas. Naudokite nr/nt duombazę, paiešką apribokite taip, kad ieškotų atitikmenų tik bakterinės sekose (organizmas “bacteria”). Analizei naudokite tik patį pirmą atitikmenį. Pateikite lentelę, kurioje būtų read’o id ir rasto mikroorganizmo rūšis
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+5) Kokių rūšių bakterijų buvo mėginyje?
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
 # Antras laboratorinis darbas
 
 Naudotos komandos užduoties 3 punkte:
