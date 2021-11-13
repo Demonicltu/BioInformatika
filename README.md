@@ -15,10 +15,14 @@ fasta ir fastQ formatų skirtumai:
  - fasta formatas neturi standartizuoto būdo tai užkuduoti. Užtat fastQ yra papildomai atsirandanti nukleotido kokybės balų seka. (angl. sequence of quality scores)
  - Paprasčiau šnekant, fastQ formatas papildomai padeda nustatyti sekos kokybę.
  - fastQ formato papildoma informacija: 
-  a) Eilutė, prasidedanti @, kurioje yra sekos ID.
-  b) Viena ar daugiau eilučių, kuriose yra seka.
-  c) Nauja eilutė, prasidedanti simboliu +, tuščia arba kartojanti sekos ID.
-  d) Viena ar daugiau eilučių, kuriose yra kokybės balai.
+
+    a) Eilutė, prasidedanti @, kurioje yra sekos ID.
+
+    b) Viena ar daugiau eilučių, kuriose yra seka.
+
+    c) Nauja eilutė, prasidedanti simboliu +, tuščia arba kartojanti sekos ID.
+
+    d) Viena ar daugiau eilučių, kuriose yra kokybės balai.
 
 --------------------------------------------------------------------------------------------------------------------
 
