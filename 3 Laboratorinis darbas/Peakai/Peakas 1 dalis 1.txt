@@ -1,0 +1,173 @@
+RID: VX3Z2492016	
+Job Title:Nucleotide Sequence 				
+Program: BLASTN 
+Database: Representative genomes (ref_prok_rep_genomes) 
+Query #1:  Query ID: lcl|Query_34249 Length: 151
+
+Sequences producing significant alignments:
+                                                                  Scientific      Common                     Max    Total Query   E   Per.   Acc.                        
+Description                                                       Name            Name            Taxid      Score  Score cover Value Ident  Len        Accession        
+Staphylococcus aureus subsp. aureus NCTC 8325 chromosome,...      Staphylococc... Staphylococc... 93061      252    626   100%  7e-64 96.69  2821361    NC_007795.1      
+Staphylococcus schweitzeri strain NCTC13712 chromosome 1          Staphylococc... Staphylococc... 1654388    115    287   85%   1e-22 94.59  2784939    NZ_LR134304.1    
+Staphylococcus argenteus strain BN75 chromosome                   Staphylococc... Staphylococc... 985002     100    179   51%   3e-18 89.74  2754198    NZ_CP015758.1    
+
+
+Alignments:
+>Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+Sequence ID: NC_007795.1 Length: 2821361 
+Range 1: 1978168 to 1978318
+
+Score:252 bits(136), Expect:7e-64, 
+Identities:146/151(97%),  Gaps:0/151(0%), Strand: Plus/Plus
+
+Query  1        GAAGTTCTAATGATTTATCGACTGCTAGACAGCAGATATGCTTAATTTAAGTACCTTATG  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1978168  GAAGTTCTAATGATTTATCGACTGCTAGACAGCAGATATGCTTAATTTAAGTACCTTATG  1978227
+
+Query  61       CTAATTGGCACCATGGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTC  120
+                |||||||||||||||||||||||||||||||||||||||| ||||||||||||||| |||
+Sbjct  1978228  CTAATTGGCACCATGGGAGTGGGACAGAAATGATATTTTCATAAAATTTATTTCGTCGTC  1978287
+
+Query  121      CCACCACAAATCGCATTGCCTGTAGAATTTC  151
+                ||||| ||| |||| ||||||||||||||||
+Sbjct  1978288  CCACCCCAACTCGCTTTGCCTGTAGAATTTC  1978318
+
+
+
+
+Range 2: 1286784 to 1286861
+
+Score:106 bits(57), Expect:6e-20, 
+Identities:71/78(91%),  Gaps:0/78(0%), Strand: Plus/Minus
+
+Query  73       ATGGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTCCCACCACAAATC  132
+                ||||||||||||||||||||||||||||| |||||||||||||| |||||||| ||| | 
+Sbjct  1286861  ATGGGAGTGGGACAGAAATGATATTTTCGCAAAATTTATTTCGTCGTCCCACCCCAACTT  1286802
+
+Query  133      GCATTGCCTGTAGAATTT  150
+                |||||| |||||||| ||
+Sbjct  1286801  GCATTGTCTGTAGAAATT  1286784
+
+
+
+
+Range 3: 978096 to 978146
+
+Score:89.8 bits(48), Expect:6e-15, 
+Identities:50/51(98%),  Gaps:0/51(0%), Strand: Plus/Plus
+
+Query  75      GGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTCCCACC  125
+               |||||||||||||||||||||||||||||||||||||||||| ||||||||
+Sbjct  978096  GGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTCGTCCCACC  978146
+
+
+
+
+Range 4: 2778715 to 2778771
+
+Score:89.8 bits(48), Expect:6e-15, 
+Identities:54/57(95%),  Gaps:0/57(0%), Strand: Plus/Plus
+
+Query  73       ATGGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTCCCACCACAA  129
+                ||||||||||||||||||||||||||||| |||||||||||||| |||||||| |||
+Sbjct  2778715  ATGGGAGTGGGACAGAAATGATATTTTCGCAAAATTTATTTCGTCGTCCCACCCCAA  2778771
+
+
+
+
+Range 5: 860602 to 860663
+
+Score:87.9 bits(47), Expect:2e-14, 
+Identities:57/62(92%),  Gaps:0/62(0%), Strand: Plus/Minus
+
+Query  74      TGGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTCCCACCACAAATCG  133
+               |||||||||||||||||||||||||||| |||||||||||||| |||||||| ||| | |
+Sbjct  860663  TGGGAGTGGGACAGAAATGATATTTTCGCAAAATTTATTTCGTCGTCCCACCCCAACTTG  860604
+
+Query  134     CA  135
+               ||
+Sbjct  860603  CA  860602
+
+
+
+>Staphylococcus schweitzeri strain NCTC13712 chromosome 1
+Sequence ID: NZ_LR134304.1 Length: 2784939 
+Range 1: 1978514 to 1978587
+
+Score:115 bits(62), Expect:1e-22, 
+Identities:70/74(95%),  Gaps:0/74(0%), Strand: Plus/Plus
+
+Query  1        GAAGTTCTAATGATTTATCGACTGCTAGACAGCAGATATGCTTAATTTAAGTACCTTATG  60
+                |||||| ||||||||||||||||||||||||||||||||||||||||||| | |||||||
+Sbjct  1978514  GAAGTTTTAATGATTTATCGACTGCTAGACAGCAGATATGCTTAATTTAACTGCCTTATG  1978573
+
+Query  61       CTAATTGGCACCAT  74
+                || |||||||||||
+Sbjct  1978574  CTTATTGGCACCAT  1978587
+
+
+
+
+Range 2: 541133 to 541185
+
+Score:87.9 bits(47), Expect:2e-14, 
+Identities:51/53(96%),  Gaps:0/53(0%), Strand: Plus/Plus
+
+Query  73      ATGGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTCCCACC  125
+               ||||||||||||||||||||||||||||| |||||||||||||| ||||||||
+Sbjct  541133  ATGGGAGTGGGACAGAAATGATATTTTCGCAAAATTTATTTCGTCGTCCCACC  541185
+
+
+
+
+Range 3: 2105353 to 2105409
+
+Score:84.2 bits(45), Expect:3e-13, 
+Identities:53/57(93%),  Gaps:0/57(0%), Strand: Plus/Plus
+
+Query  73       ATGGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTCCCACCACAA  129
+                ||||||||||||||||||||||||||||| |||||| ||||||| |||||||| |||
+Sbjct  2105353  ATGGGAGTGGGACAGAAATGATATTTTCGCAAAATTCATTTCGTCGTCCCACCCCAA  2105409
+
+
+
+>Staphylococcus argenteus strain BN75 chromosome
+Sequence ID: NZ_CP015758.1 Length: 2754198 
+Range 1: 2087580 to 2087657
+
+Score:100 bits(54), Expect:3e-18, 
+Identities:70/78(90%),  Gaps:0/78(0%), Strand: Plus/Minus
+
+Query  73       ATGGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTCCCACCACAAATC  132
+                ||||||||||||||||||||||||||||  |||||||||||||| |||||||| ||| | 
+Sbjct  2087657  ATGGGAGTGGGACAGAAATGATATTTTCACAAAATTTATTTCGTTGTCCCACCCCAACTT  2087598
+
+Query  133      GCATTGCCTGTAGAATTT  150
+                |||||| |||||||| ||
+Sbjct  2087597  GCATTGTCTGTAGAAATT  2087580
+
+
+
+
+Range 2: 1931995 to 1932057
+
+Score:78.7 bits(42), Expect:1e-11, 
+Identities:56/63(89%),  Gaps:0/63(0%), Strand: Plus/Minus
+
+Query  73       ATGGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTCCCACCACAAATC  132
+                ||||||||||||||||||||||||||||  ||||||||||| || |||||||| ||| | 
+Sbjct  1932057  ATGGGAGTGGGACAGAAATGATATTTTCACAAAATTTATTTTGTTGTCCCACCCCAACTT  1931998
+
+Query  133      GCA  135
+                |||
+Sbjct  1931997  GCA  1931995
+
+
+
+
+
+
+
+		
+
+

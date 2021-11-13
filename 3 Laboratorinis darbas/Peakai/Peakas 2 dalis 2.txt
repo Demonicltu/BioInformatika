@@ -1,0 +1,129 @@
+RID: VX4BJZSP016	
+Job Title:Nucleotide Sequence 				
+Program: BLASTN 
+Database: Representative genomes (ref_prok_rep_genomes) 
+Query #1:  Query ID: lcl|Query_40907 Length: 150
+
+Sequences producing significant alignments:
+                                                                  Scientific      Common                     Max    Total Query   E   Per.   Acc.                        
+Description                                                       Name            Name            Taxid      Score  Score cover Value Ident  Len        Accession        
+Shigella sonnei strain ECSW+14...                                 Shigella sonnei Shigella sonnei 624        278    278   100%  1e-71 100.00 113252     NZ_NQCD010000... 
+Escherichia coli str. K-12 substr. MG1655, complete genome        Escherichia ... Escherichia ... 511145     278    278   100%  1e-71 100.00 4641652    NC_000913.3      
+Escherichia fergusonii strain RHB18-C03 chromosome, complete...   Escherichia ... Escherichia ... 564        261    261   100%  1e-66 98.00  4571987    NZ_CP055696.1    
+Shigella boydii strain 600384 600384_99, whole genome shotgun...  Shigella boydii Shigella boydii 621        255    255   100%  5e-65 97.35  15515      NZ_LPTR010000... 
+Shigella flexneri 2a str. 301 chromosome, complete genome         Shigella fle... Shigella fle... 198214     255    255   100%  5e-65 97.35  4607202    NC_004337.2      
+
+
+Alignments:
+>Shigella sonnei strain ECSW+14 NODE_16_length_113252_cov_91.9735_ID_31.ctg_1, whole genome shotgun sequence
+Sequence ID: NZ_NQCD01000023.1 Length: 113252 
+Range 1: 76691 to 76840
+
+Score:278 bits(150), Expect:1e-71, 
+Identities:150/150(100%),  Gaps:0/150(0%), Strand: Plus/Minus
+
+Query  1      TTTGGTTCTTCCCGATAATCCTGGGATACACCGCGGGGAAACGCTTCGGCGGTAATCCAT  60
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  76840  TTTGGTTCTTCCCGATAATCCTGGGATACACCGCGGGGAAACGCTTCGGCGGTAATCCAT  76781
+
+Query  61     TTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCTTTCGAGA  120
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  76780  TTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCTTTCGAGA  76721
+
+Query  121    ACGGGCAAAAAGCGGATGCGCTGGGGCTGG  150
+              ||||||||||||||||||||||||||||||
+Sbjct  76720  ACGGGCAAAAAGCGGATGCGCTGGGGCTGG  76691
+
+
+
+>Escherichia coli str. K-12 substr. MG1655, complete genome
+Sequence ID: NC_000913.3 Length: 4641652 
+Range 1: 3904994 to 3905143
+
+Score:278 bits(150), Expect:1e-71, 
+Identities:150/150(100%),  Gaps:0/150(0%), Strand: Plus/Minus
+
+Query  1        TTTGGTTCTTCCCGATAATCCTGGGATACACCGCGGGGAAACGCTTCGGCGGTAATCCAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3905143  TTTGGTTCTTCCCGATAATCCTGGGATACACCGCGGGGAAACGCTTCGGCGGTAATCCAT  3905084
+
+Query  61       TTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCTTTCGAGA  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  3905083  TTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCTTTCGAGA  3905024
+
+Query  121      ACGGGCAAAAAGCGGATGCGCTGGGGCTGG  150
+                ||||||||||||||||||||||||||||||
+Sbjct  3905023  ACGGGCAAAAAGCGGATGCGCTGGGGCTGG  3904994
+
+
+
+>Escherichia fergusonii strain RHB18-C03 chromosome, complete genome
+Sequence ID: NZ_CP055696.1 Length: 4571987 
+Range 1: 2778458 to 2778607
+
+Score:261 bits(141), Expect:1e-66, 
+Identities:147/150(98%),  Gaps:0/150(0%), Strand: Plus/Plus
+
+Query  1        TTTGGTTCTTCCCGATAATCCTGGGATACACCGCGGGGAAACGCTTCGGCGGTAATCCAT  60
+                |||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||
+Sbjct  2778458  TTTGGTTCTTCCCGATAATCCTGGGATACACCGCAGGGAAACGCTTCGGCGGTAATCCAT  2778517
+
+Query  61       TTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCTTTCGAGA  120
+                |||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||
+Sbjct  2778518  TTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCCTTCGAGA  2778577
+
+Query  121      ACGGGCAAAAAGCGGATGCGCTGGGGCTGG  150
+                | ||||||||||||||||||||||||||||
+Sbjct  2778578  ATGGGCAAAAAGCGGATGCGCTGGGGCTGG  2778607
+
+
+
+>Shigella boydii strain 600384 600384_99, whole genome shotgun sequence
+Sequence ID: NZ_LPTR01000098.1 Length: 15515 
+Range 1: 8370 to 8520
+
+Score:255 bits(138), Expect:5e-65, 
+Identities:147/151(97%),  Gaps:1/151(0%), Strand: Plus/Minus
+
+Query  1     TTT-GGTTCTTCCCGATAATCCTGGGATACACCGCGGGGAAACGCTTCGGCGGTAATCCA  59
+             ||| |||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  8520  TTTGGGTTCTTCCCGATAATCCTGGGATACACCGCGGGCAAACGCTTCGGCGGTAATCCA  8461
+
+Query  60    TTTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCTTTCGAG  119
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  8460  TTTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCCTTCGAG  8401
+
+Query  120   AACGGGCAAAAAGCGGATGCGCTGGGGCTGG  150
+             |||||||||||||||||||||| ||||||||
+Sbjct  8400  AACGGGCAAAAAGCGGATGCGCCGGGGCTGG  8370
+
+
+
+>Shigella flexneri 2a str. 301 chromosome, complete genome
+Sequence ID: NC_004337.2 Length: 4607202 
+Range 1: 3842729 to 3842879
+
+Score:255 bits(138), Expect:5e-65, 
+Identities:147/151(97%),  Gaps:1/151(0%), Strand: Plus/Plus
+
+Query  1        TTT-GGTTCTTCCCGATAATCCTGGGATACACCGCGGGGAAACGCTTCGGCGGTAATCCA  59
+                ||| |||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  3842729  TTTGGGTTCTTCCCGATAATCCTGGGATACACCGCGGGCAAACGCTTCGGCGGTAATCCA  3842788
+
+Query  60       TTTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCTTTCGAG  119
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  3842789  TTTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCCTTCGAG  3842848
+
+Query  120      AACGGGCAAAAAGCGGATGCGCTGGGGCTGG  150
+                |||||||||||||||||||||| ||||||||
+Sbjct  3842849  AACGGGCAAAAAGCGGATGCGCCGGGGCTGG  3842879
+
+
+
+
+
+
+
+		
+
+

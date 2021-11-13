@@ -1,0 +1,239 @@
+RID: VX58GGH101N	
+Job Title:Nucleotide Sequence 				
+Program: BLASTN 
+Database: Complete genomes (prok_complete_genomes) 
+Query #1:  Query ID: lcl|Query_47449 Length: 151
+
+Sequences producing significant alignments:
+                                                                  Scientific      Common                     Max    Total Query   E   Per.   Acc.                        
+Description                                                       Name            Name            Taxid      Score  Score cover Value Ident  Len        Accession        
+Thermus thermophilus HB8 chromosome 1, complete sequence          Thermus ther... Thermus ther... 300852     279    279   100%  6e-72 100.00 1849742    NC_006461.1      
+Thermus thermophilus HB27, complete sequence                      Thermus ther... Thermus ther... 262724     268    268   100%  1e-68 98.68  1894877    NC_005835.1      
+Thermus thermophilus JL-18, complete sequence                     Thermus ther... Thermus ther... 798128     235    235   100%  1e-58 94.70  1902595    NC_017587.1      
+Thermus parvatiensis strain RL chromosome, complete genome        Thermus parv... Thermus parv... 456163     228    228   100%  2e-56 94.04  1872821    NZ_CP014141.1    
+Thermus thermophilus strain AA2-29                                Thermus ther... Thermus ther... 274        200    200   99%   5e-48 90.67  1929011    NZ_AP019794.1    
+Thermus thermophilus strain AA2-20                                Thermus ther... Thermus ther... 274        200    200   99%   5e-48 90.67  1928002    NZ_AP019792.1    
+Thermus thermophilus strain TMY                                   Thermus ther... Thermus ther... 274        180    180   100%  6e-42 88.08  2121526    NZ_AP017920.1    
+Thermus brockianus strain GE-1 chromosome, complete genome        Thermus broc... Thermus broc... 56956      165    165   98%   2e-37 86.58  2035182    NZ_CP016312.1    
+Thermus sp. CCB_US3_UF1, complete genome                          Thermus sp. ... Thermus sp. ... 1111069    110    110   100%  8e-21 80.39  2243772    NC_017278.1      
+Thermus oshimai JL-2, complete sequence                           Thermus oshi... Thermus oshi... 751945     97.1   97.1  100%  6e-17 78.71  2072393    NC_019386.1      
+
+
+Alignments:
+>Thermus thermophilus HB8 chromosome 1, complete sequence
+Sequence ID: NC_006461.1 Length: 1849742 
+Range 1: 1062233 to 1062383
+
+Score:279 bits(151), Expect:6e-72, 
+Identities:151/151(100%),  Gaps:0/151(0%), Strand: Plus/Minus
+
+Query  1        GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1062383  GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  1062324
+
+Query  61       CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAG  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1062323  CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAG  1062264
+
+Query  121      GTAGACGAGGTAGAGCCCCCCGAGGACCTGG  151
+                |||||||||||||||||||||||||||||||
+Sbjct  1062263  GTAGACGAGGTAGAGCCCCCCGAGGACCTGG  1062233
+
+
+
+>Thermus thermophilus HB27, complete sequence
+Sequence ID: NC_005835.1 Length: 1894877 
+Range 1: 735211 to 735361
+
+Score:268 bits(145), Expect:1e-68, 
+Identities:149/151(99%),  Gaps:0/151(0%), Strand: Plus/Minus
+
+Query  1       GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  735361  GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  735302
+
+Query  61      CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAG  120
+               |||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||
+Sbjct  735301  CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACTATGAG  735242
+
+Query  121     GTAGACGAGGTAGAGCCCCCCGAGGACCTGG  151
+               |||||||||||||||||||||||| ||||||
+Sbjct  735241  GTAGACGAGGTAGAGCCCCCCGAGAACCTGG  735211
+
+
+
+>Thermus thermophilus JL-18, complete sequence
+Sequence ID: NC_017587.1 Length: 1902595 
+Range 1: 857517 to 857667
+
+Score:235 bits(127), Expect:1e-58, 
+Identities:143/151(95%),  Gaps:0/151(0%), Strand: Plus/Plus
+
+Query  1       GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||
+Sbjct  857517  GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAAAACGTCTT  857576
+
+Query  61      CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAG  120
+               ||||||||||||||||||||| |   |||||||| || ||||||||||||||||||| ||
+Sbjct  857577  CGCCGAGGCCTCGGGGAGGGGTTGGGCCTCGGGGCGGCTGCGGAAGTGCCGGACCATAAG  857636
+
+Query  121     GTAGACGAGGTAGAGCCCCCCGAGGACCTGG  151
+               |||||||||||||||||||||||||||||||
+Sbjct  857637  GTAGACGAGGTAGAGCCCCCCGAGGACCTGG  857667
+
+
+
+>Thermus parvatiensis strain RL chromosome, complete genome
+Sequence ID: NZ_CP014141.1 Length: 1872821 
+Range 1: 927685 to 927834
+
+Score:228 bits(123), Expect:2e-56, 
+Identities:142/151(94%),  Gaps:1/151(0%), Strand: Plus/Plus
+
+Query  1       GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||
+Sbjct  927685  GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAAAACGTCTT  927744
+
+Query  61      CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAG  120
+               ||||||||||||||||||||| |   |||||||| || ||||||||||||||||||| ||
+Sbjct  927745  CGCCGAGGCCTCGGGGAGGGGTTGGGCCTCGGGGCGGCTGCGGAAGTGCCGGACCATAAG  927804
+
+Query  121     GTAGACGAGGTAGAGCCCCCCGAGGACCTGG  151
+               |||||||||||||||||||| ||||||||||
+Sbjct  927805  GTAGACGAGGTAGAGCCCCC-GAGGACCTGG  927834
+
+
+
+>Thermus thermophilus strain AA2-29
+Sequence ID: NZ_AP019794.1 Length: 1929011 
+Range 1: 1092018 to 1092167
+
+Score:200 bits(108), Expect:5e-48, 
+Identities:136/150(91%),  Gaps:0/150(0%), Strand: Plus/Minus
+
+Query  1        GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||| |||  |  
+Sbjct  1092167  GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAAAACTCCCC  1092108
+
+Query  61       CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAG  120
+                ||||| ||||||||| ||||| ||  |||||||||||| |||||||||| ||||||||||
+Sbjct  1092107  CGCCGTGGCCTCGGGAAGGGGTTTGGCCTCGGGGTGGTCGCGGAAGTGCTGGACCATGAG  1092048
+
+Query  121      GTAGACGAGGTAGAGCCCCCCGAGGACCTG  150
+                |||||||||||| |||||||| ||||||||
+Sbjct  1092047  GTAGACGAGGTAAAGCCCCCCCAGGACCTG  1092018
+
+
+
+>Thermus thermophilus strain AA2-20
+Sequence ID: NZ_AP019792.1 Length: 1928002 
+Range 1: 1090933 to 1091082
+
+Score:200 bits(108), Expect:5e-48, 
+Identities:136/150(91%),  Gaps:0/150(0%), Strand: Plus/Minus
+
+Query  1        GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||| |||  |  
+Sbjct  1091082  GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAAAACTCCCC  1091023
+
+Query  61       CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAG  120
+                ||||| ||||||||| ||||| ||  |||||||||||| |||||||||| ||||||||||
+Sbjct  1091022  CGCCGTGGCCTCGGGAAGGGGTTTGGCCTCGGGGTGGTCGCGGAAGTGCTGGACCATGAG  1090963
+
+Query  121      GTAGACGAGGTAGAGCCCCCCGAGGACCTG  150
+                |||||||||||| |||||||| ||||||||
+Sbjct  1090962  GTAGACGAGGTAAAGCCCCCCCAGGACCTG  1090933
+
+
+
+>Thermus thermophilus strain TMY
+Sequence ID: NZ_AP017920.1 Length: 2121526 
+Range 1: 185001 to 185151
+
+Score:180 bits(97), Expect:6e-42, 
+Identities:133/151(88%),  Gaps:0/151(0%), Strand: Plus/Plus
+
+Query  1       GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+               ||||||||||||||||||||||||||||||||| ||||  ||||||||||| |||  |  
+Sbjct  185001  GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATGAGGACCACCACCCGCCAAAACTCCCC  185060
+
+Query  61      CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAG  120
+               ||||| ||||||||| ||||| ||  |||| ||||||| |||||||||| ||||||||||
+Sbjct  185061  CGCCGTGGCCTCGGGAAGGGGTTTGGCCTCCGGGTGGTCGCGGAAGTGCTGGACCATGAG  185120
+
+Query  121     GTAGACGAGGTAGAGCCCCCCGAGGACCTGG  151
+               |||||||||||| |||||||| |||||||||
+Sbjct  185121  GTAGACGAGGTAAAGCCCCCCCAGGACCTGG  185151
+
+
+
+>Thermus brockianus strain GE-1 chromosome, complete genome
+Sequence ID: NZ_CP016312.1 Length: 2035182 
+Range 1: 178643 to 178791
+
+Score:165 bits(89), Expect:2e-37, 
+Identities:129/149(87%),  Gaps:0/149(0%), Strand: Plus/Minus
+
+Query  1       GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+               ||||||||||||||||||||||||||||||||| ||||||||||||||||| ||||||  
+Sbjct  178791  GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATGAGGAGGACCACCCGCCAAAACGTCCG  178732
+
+Query  61      CGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAG  120
+                |||| |||||| |||||||||||  |||| | |  ||   |||||||||| ||||||||
+Sbjct  178731  GGCCGTGGCCTCCGGGAGGGGCTTGGCCTCCGCGGCGTCCTGGAAGTGCCGAACCATGAG  178672
+
+Query  121     GTAGACGAGGTAGAGCCCCCCGAGGACCT  149
+               ||||| |||||| |||||||| |||||||
+Sbjct  178671  GTAGAGGAGGTAAAGCCCCCCCAGGACCT  178643
+
+
+
+>Thermus sp. CCB_US3_UF1, complete genome
+Sequence ID: NC_017278.1 Length: 2243772 
+Range 1: 1374415 to 1374562
+
+Score:110 bits(59), Expect:8e-21, 
+Identities:123/153(80%),  Gaps:7/153(4%), Strand: Plus/Minus
+
+Query  1        GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+                ||||||||||||||||||||||||||||||||  || ||||||||||||||||||   | 
+Sbjct  1374562  GTCCACGGCGAAGGCCAGGTCCACCAGGTTGAGGAGAAGGACCACCCGCCAGAACCCATG  1374503
+
+Query  61       CGCCGAGGCCTCGGGGAGGGGC-TT-CCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATG  118
+                 |||  |||| | ||| ||||| ||  ||| |    ||||  ||||||||| ||  ||| 
+Sbjct  1374502  GGCCTGGGCC-CTGGGTGGGGCCTTGGCCCCC----TGGTCCCGGAAGTGCTGGCGCATC  1374448
+
+Query  119      AGGTAGACGAGGTAGAGCCCCCCGAGGACCTGG  151
+                ||||||| |||||| |||||||| |||||||||
+Sbjct  1374447  AGGTAGAGGAGGTAAAGCCCCCCCAGGACCTGG  1374415
+
+
+
+>Thermus oshimai JL-2, complete sequence
+Sequence ID: NC_019386.1 Length: 2072393 
+Range 1: 1430014 to 1430164
+
+Score:97.1 bits(52), Expect:6e-17, 
+Identities:122/155(79%),  Gaps:8/155(5%), Strand: Plus/Minus
+
+Query  1        GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTT  60
+                |||||||||||||||||||||||||||||| || |||||||| |  ||||||||| ||  
+Sbjct  1430164  GTCCACGGCGAAGGCCAGGTCCACCAGGTTCATGAGGAGGACGATGCGCCAGAAC-TC--  1430108
+
+Query  61       CGCCGAGGCCT--C-GGGGAGGGG-CTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCA  116
+                |||||   |||  | |||| |||| |||  ||||    |  |  |  | |||| ||||||
+Sbjct  1430107  CGCCGCC-CCTAGCTGGGGTGGGGCCTTTTCCTCCCCCTCCTGCCTTAGGTGCTGGACCA  1430049
+
+Query  117      TGAGGTAGACGAGGTAGAGCCCCCCGAGGACCTGG  151
+                |||||||||| ||||| |||||||| |||||||||
+Sbjct  1430048  TGAGGTAGACCAGGTAAAGCCCCCCCAGGACCTGG  1430014
+
+
+
+
+
+
+
+		
+
+

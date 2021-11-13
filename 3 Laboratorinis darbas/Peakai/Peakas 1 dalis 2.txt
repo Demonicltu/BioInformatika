@@ -1,0 +1,85 @@
+RID: VX42A5AE01N	
+Job Title:Nucleotide Sequence 				
+Program: BLASTN 
+Database: Representative genomes (ref_prok_rep_genomes) 
+Query #1:  Query ID: lcl|Query_54923 Length: 151
+
+Sequences producing significant alignments:
+                                                                  Scientific      Common                     Max    Total Query   E   Per.   Acc.                        
+Description                                                       Name            Name            Taxid      Score  Score cover Value Ident  Len        Accession        
+Escherichia marmotae strain UMB2500_14 scaffold00001, whole...    Escherichia ... Escherichia ... 1499973    279    279   100%  3e-72 100.00 4517279    NZ_JAAJTM0100... 
+Escherichia coli str. K-12 substr. MG1655, complete genome        Escherichia ... Escherichia ... 511145     279    279   100%  3e-72 100.00 4641652    NC_000913.3      
+Shigella dysenteriae strain BCW_4872...                           Shigella dys... Shigella dys... 622        263    263   98%   3e-67 98.65  6565       NZ_MSJW020002... 
+
+
+Alignments:
+>Escherichia marmotae strain UMB2500_14 scaffold00001, whole genome shotgun sequence
+Sequence ID: NZ_JAAJTM010000001.1 Length: 4517279 
+Range 1: 2309239 to 2309389
+
+Score:279 bits(151), Expect:3e-72, 
+Identities:151/151(100%),  Gaps:0/151(0%), Strand: Plus/Minus
+
+Query  1        AACTTCACTCTTTGGTATATTGTTATTAGCAGGAAAACGATAAAACCTTTAATCAGAGAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2309389  AACTTCACTCTTTGGTATATTGTTATTAGCAGGAAAACGATAAAACCTTTAATCAGAGAT  2309330
+
+Query  61       ATTGAACTTCGTTTCTTTCTGTTAATAGCCTTAGGGGTGATCATTGTTACCTCTTTCCAG  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2309329  ATTGAACTTCGTTTCTTTCTGTTAATAGCCTTAGGGGTGATCATTGTTACCTCTTTCCAG  2309270
+
+Query  121      GTCTGGCATATAGGTATGTATGACTTGCATG  151
+                |||||||||||||||||||||||||||||||
+Sbjct  2309269  GTCTGGCATATAGGTATGTATGACTTGCATG  2309239
+
+
+
+>Escherichia coli str. K-12 substr. MG1655, complete genome
+Sequence ID: NC_000913.3 Length: 4641652 
+Range 1: 1424544 to 1424694
+
+Score:279 bits(151), Expect:3e-72, 
+Identities:151/151(100%),  Gaps:0/151(0%), Strand: Plus/Plus
+
+Query  1        AACTTCACTCTTTGGTATATTGTTATTAGCAGGAAAACGATAAAACCTTTAATCAGAGAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1424544  AACTTCACTCTTTGGTATATTGTTATTAGCAGGAAAACGATAAAACCTTTAATCAGAGAT  1424603
+
+Query  61       ATTGAACTTCGTTTCTTTCTGTTAATAGCCTTAGGGGTGATCATTGTTACCTCTTTCCAG  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1424604  ATTGAACTTCGTTTCTTTCTGTTAATAGCCTTAGGGGTGATCATTGTTACCTCTTTCCAG  1424663
+
+Query  121      GTCTGGCATATAGGTATGTATGACTTGCATG  151
+                |||||||||||||||||||||||||||||||
+Sbjct  1424664  GTCTGGCATATAGGTATGTATGACTTGCATG  1424694
+
+
+
+>Shigella dysenteriae strain BCW_4872 BCW_4872_1__paired__contig_238, whole genome shotgun sequence
+Sequence ID: NZ_MSJW02000238.1 Length: 6565 
+Range 1: 1272 to 1419
+
+Score:263 bits(142), Expect:3e-67, 
+Identities:146/148(99%),  Gaps:0/148(0%), Strand: Plus/Plus
+
+Query  1     AACTTCACTCTTTGGTATATTGTTATTAGCAGGAAAACGATAAAACCTTTAATCAGAGAT  60
+             || ||||| |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1272  AATTTCACCCTTTGGTATATTGTTATTAGCAGGAAAACGATAAAACCTTTAATCAGAGAT  1331
+
+Query  61    ATTGAACTTCGTTTCTTTCTGTTAATAGCCTTAGGGGTGATCATTGTTACCTCTTTCCAG  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1332  ATTGAACTTCGTTTCTTTCTGTTAATAGCCTTAGGGGTGATCATTGTTACCTCTTTCCAG  1391
+
+Query  121   GTCTGGCATATAGGTATGTATGACTTGC  148
+             ||||||||||||||||||||||||||||
+Sbjct  1392  GTCTGGCATATAGGTATGTATGACTTGC  1419
+
+
+
+
+
+
+
+		
+
+
