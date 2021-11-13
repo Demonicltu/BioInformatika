@@ -4,6 +4,12 @@ Laboratorinio darbo analizė bei funkcijų įgyvendintų kode aprašymas laisva 
 
 # Trečias laboratorinis darbas
 
+Pastabos: prieš leidžiant projektą reikia pakeisti 
+
+BioInformatika/3 Laboratorinis darbas/NEW.idea aplanką į .idea
+
+Dabar taip yra padaryta, nes kertasi trečiojo laboratorinio darbo .idea aplankas su pirmo laboratorinio darbo .idea
+
 1) Apibūdinkite fastq formatą. (https://en.wikipedia.org/wiki/FASTQ_format). Kokia papildoma informacija pateikiam lyginant su FASTA formatu?
 
 fasta ir fastQ formatų panašumai:
@@ -47,25 +53,65 @@ Jei būtų naudojami pirmi 32 ASCII simboliai, tai sekos galėtų įgauti neigia
   v. Illumina 1.8+ Phred+33
   Parašykite, kokią koduotę nustatėte ir kuo remiantis?
 
-
+Nustatytos Sanger Phread+33 arba Illumina 1.8+ Phread+33 koduotės, galutinai negalima pasakyti tikslios koduotės, nes Sanger Phread+33 ir Illumina 1.8+ Phread+3 yra labai panašios, jos skiriasi tik vienu ASCII simboliu "j", nuordytame faile nebuvo tokio simbolio, todėl negalima tiksliai nustatyti kokia iš šių dviejų koduočių buvo naudojama. Kitos koduotės netiko, nes buvo faile naudojami ASCII simboliai, kurie neįeina į atitinkamas koduotes.
 
 --------------------------------------------------------------------------------------------------------------------
 
 4.b) Analizuotų C/G nukleotidų pasiskirstymą read’uose. Pateikite grafiką, kurio y ašyje būtų read’ų skaičius, x ašyje - C/G nukletidų dalis read’o sekoje (100 proc. Reikštų, kad visi simboliai read’o sekoje yra G ir C) Parašykite, koks „stambių“ pikų skaičius yra gautame grafike? (tikrai mažiau nei 6)
 
+Atlikau papildomus skaičiavimus, kad surasti C/G nukleotidų pasiskirstymą read'e. 
+Buvo naudojama funkcija atlikti papildomiems skaičiavimams beieškant C/G nukleotidų pasiskirstymo, tai būtų: GCratio(sequence), kuri priima DNR seką ir grąžina sekoje esančių C/G nukleotidų santykį. Skaičiai apvalinami iki dviejų skaičių po kablelio tikslumo. 
 
+Gauti rezultatai surašyti į excel dokumentą /3 Laboratorinis darbas/CG nukleotidų pasiskirstymo analizė.xlsx. Sugeneruotoje diagramoje matomi keli peak'ai, tai yra nuo 0.24 iki 0.39, nuo 0.47 iki 0.58 bei nuo 0.64 iki 0.76.
 
 --------------------------------------------------------------------------------------------------------------------
 
 4.c) Paimtų po 5 kiekvieno piko viršūnės sekų ir atliktų blast’o paieškas. Naudokite nr/nt duombazę, paiešką apribokite taip, kad ieškotų atitikmenų tik bakterinės sekose (organizmas “bacteria”). Analizei naudokite tik patį pirmą atitikmenį. Pateikite lentelę, kurioje būtų read’o id ir rasto mikroorganizmo rūšis
 
+Buvo naudojama duombazė (https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch&BLAST_SPEC=MicrobialGenomes) atrasti bakterijas esančias mėginyje.
 
+Pirmas peak'as:
+
+Sekos GAAGTTCTAATGATTTATCGACTGCTAGACAGCAGATATGCTTAATTTAAGTACCTTATGCTAATTGGCACCATGGGAGTGGGACAGAAATGATATTTTCGTAAAATTTATTTCGTAGTCCCACCACAAATCGCATTGCCTGTAGAATTTC rezultatas => Stafilokokas – patogeninis mikroorganizmas. 
+Detaliau galima rasti /3 Laboratorinis darbas/Peakai/Peakas 1 dalis 1.txt
+
+Sekos AACTTCACTCTTTGGTATATTGTTATTAGCAGGAAAACGATAAAACCTTTAATCAGAGATATTGAACTTCGTTTCTTTCTGTTAATAGCCTTAGGGGTGATCATTGTTACCTCTTTCCAGGTCTGGCATATAGGTATGTATGACTTGCATG rezultatas =>  Ešerichija marmotae - gramneigiamų, sporas nesudarančių, lazdelės formos bakterija. 
+Detaliau galima rasti /3 Laboratorinis darbas/Peakai/Peakas 1 dalis 2.txt
+
+
+
+Antras peak'as:
+
+Sekos TTTGGTTCTTCCCGATAATCCTGGGATACACCGCGGGGAAACGCTTCGGCGGTAATCCATTTACTGCCATGGTGATTGGTGGAGCGTTAGTGCATCCATTAATTCTGACTGCTTTCGAGAACGGGCAAAAAGCGGATGCGCTGGGGCTGG rezultatas => Šigella sonnei - gramneigiama, lazdelės pavidalo, nemotorinė, sporą nesukelianti bakterija. 
+
+Detaliau galima rasti /3 Laboratorinis darbas/Peakai/Peakas 2 dalis 1.txt
+
+Sekos GGTGGTTTCGCCGGGCATGGTTGATGCGCACACCCATATTTCTGAACCGGGTCGTAGCCACTGGGAAGGTTATGAAACCGGTACTCGCGCAGCGGCAAAAGGTGGTATCACCACCATGATCGAAATGCCGCTCAACCAGCTGCCTGCAACG rezultatas => Ešerichija coli (žarninės lazdelės bakterija). 
+Jau buvo Ešerichijos šeimos bakterija šitame mėginyje, galima daryt prielaidą, kad jų yra ir daugiau. 
+
+Detaliau galima rasti /3 Laboratorinis darbas/Peakai/Peakas 2 dalis 2.txt
+
+
+
+Trečias peak'as:
+
+Sekos GACGTCCTGGACTGCGGCAACGCCGGAACCCTCATGCGCCTCCTCCTCGGCCTCCTCGCGGGCCAGGAGGGGCTTTTCGCCGTCCTCACCGGGGACGCCTCCTTGAGGCGCCGCCCCATGGGCCGGGTGGTGGCCCCCTTGAGGGCCATGG rezultatas => Thermus thermophilus - gramneigiama bakterija, naudojama daugelyje biotechnologinių taikymo sričių, įskaitant kaip pavyzdinį organizmą genetinei manipuliacijai, struktūrinę genomiką ir sistemų biologiją, bakterija yra ypač atspari karščiui. 
+
+Detaliau galima rasti /3 Laboratorinis darbas/Peakai/Peakas 3 dalis 1.txt
+
+Sekos GTCCACGGCGAAGGCCAGGTCCACCAGGTTGATCAGGAGGACCACCCGCCAGAACGTCTTCGCCGAGGCCTCGGGGAGGGGCTTCCCCTCGGGGTGGTTGCGGAAGTGCCGGACCATGAGGTAGACGAGGTAGAGCCCCCCGAGGACCTGG rezultatas => Thermus thermophilus - gramneigiama bakterija, naudojama daugelyje biotechnologinių taikymo sričių, įskaitant kaip pavyzdinį organizmą genetinei manipuliacijai, struktūrinę genomiką ir sistemų biologiją, bakterija yra ypač atspari karščiui. 
+Tai nėra nuostabu, kad pasikartoja bakterija, nes šitame "peake" yra labai didelis kiekis C/G nukleotidų. 
+
+Detaliau galima rasti /3 Laboratorinis darbas/Peakai/Peakas 3 dalis 2.txt
 
 --------------------------------------------------------------------------------------------------------------------
 
 5) Kokių rūšių bakterijų buvo mėginyje?
 
+ - Bakterijų su dideliu atsparumu karštai temperatūrai (Thermo Thermophilus), tai įtakojo didelis C/G nukleotidų pasiskirstymas. 
+ - Šiltakraujuose organizmuose randamų bakterijų (Pvz.: Šigella sonnei, Ešerichija coli). 
 
+Buvo patikrinta tik dalis DNR sekų atitinkančių peak'us.
 
 --------------------------------------------------------------------------------------------------------------------
 
